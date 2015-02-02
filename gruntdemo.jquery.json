@@ -1,0 +1,26 @@
+{
+  "name": "gruntdemo",
+  "title": "gruntdemo",
+  "description": "first grunt jquery plugin",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hennywei/gruntdemo",
+  "author": {
+    "name": "hennywei",
+    "email": "hennywei@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hennywei/gruntdemo.git"
+  },
+  "bugs": "https://github.com/hennywei/gruntdemo/issues",
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/hennywei/gruntdemo/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
