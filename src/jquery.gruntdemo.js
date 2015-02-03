@@ -28,11 +28,16 @@
   $.gruntdemo.options = {
     punctuation: '.'
   };
+  $.gruntdemo.init = function(){
+
+  };
 
   // Custom selector.
   $.expr[':'].gruntdemo = function(elem) {
     // Is this element awesome?
     return $(elem).text().indexOf('awesome') !== -1;
   };
+
+
 
 }(jQuery));

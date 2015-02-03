@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'd:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'd:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 warn package.json jquery-plugin@0.0.0-ignored No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'd:\\www\\gruntdemo',
+6 verbose install   [ 'grunt',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-concat',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-qunit',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-contrib-htmlmin' ] ]
+7 info preinstall jquery-plugin@0.0.0-ignored
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping grunt@~0.4.5 d:\www\gruntdemo
+10 verbose already installed skipping grunt-contrib-clean@^0.6.0 d:\www\gruntdemo
+11 verbose already installed skipping grunt-contrib-concat@^0.5.0 d:\www\gruntdemo
+12 verbose already installed skipping grunt-contrib-jshint@^0.11.0 d:\www\gruntdemo
+13 verbose already installed skipping grunt-contrib-qunit@^0.5.2 d:\www\gruntdemo
+14 verbose already installed skipping grunt-contrib-uglify@^0.7.0 d:\www\gruntdemo
+15 verbose already installed skipping grunt-contrib-watch@^0.6.1 d:\www\gruntdemo
+16 verbose cache add [ 'grunt-contrib-htmlmin@^0.4.0', null ]
+17 verbose cache add name=undefined spec="grunt-contrib-htmlmin@^0.4.0" args=["grunt-contrib-htmlmin@^0.4.0",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'grunt-contrib-htmlmin@^0.4.0',
+18 verbose parsed url   path: 'grunt-contrib-htmlmin@^0.4.0',
+18 verbose parsed url   href: 'grunt-contrib-htmlmin@^0.4.0' }
+19 verbose cache add name="grunt-contrib-htmlmin" spec="^0.4.0" args=["grunt-contrib-htmlmin","^0.4.0"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '^0.4.0',
+20 verbose parsed url   path: '^0.4.0',
+20 verbose parsed url   href: '^0.4.0' }
+21 verbose addNamed [ 'grunt-contrib-htmlmin', '^0.4.0' ]
+22 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+23 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+24 verbose lock grunt-contrib-htmlmin@^0.4.0 C:\Users\Administrator\AppData\Roaming\npm-cache\125176d8-grunt-contrib-htmlmin-0-4-0.lock
+25 silly addNameRange { name: 'grunt-contrib-htmlmin',
+25 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+25 silly addNameRange   hasData: false }
+26 verbose request where is /grunt-contrib-htmlmin
+27 verbose request registry https://registry.npmjs.org/
+28 verbose request id 3c23b75505954c72
+29 verbose url raw /grunt-contrib-htmlmin
+30 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-htmlmin' ]
+31 verbose url resolved https://registry.npmjs.org/grunt-contrib-htmlmin
+32 verbose request where is https://registry.npmjs.org/grunt-contrib-htmlmin
+33 info trying registry request attempt 1 at 11:52:48
+34 http GET https://registry.npmjs.org/grunt-contrib-htmlmin
+35 http 200 https://registry.npmjs.org/grunt-contrib-htmlmin
+36 silly registry.get cb [ 200,
+36 silly registry.get   { date: 'Tue, 03 Feb 2015 03:52:50 GMT',
+36 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 silly registry.get     etag: '"4V51R53FB8RX02UG515X9PSK9"',
+36 silly registry.get     'content-type': 'application/json',
+36 silly registry.get     'cache-control': 'max-age=60',
+36 silly registry.get     'content-length': '15259',
+36 silly registry.get     'accept-ranges': 'bytes',
+36 silly registry.get     via: '1.1 varnish',
+36 silly registry.get     age: '22',
+36 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+36 silly registry.get     'x-cache': 'HIT',
+36 silly registry.get     'x-cache-hits': '3',
+36 silly registry.get     'x-timer': 'S1422935570.754048,VS0,VE0',
+36 silly registry.get     vary: 'Accept',
+36 silly registry.get     'keep-alive': 'timeout=10, max=50',
+36 silly registry.get     connection: 'Keep-Alive' } ]
+37 silly addNameRange number 2 { name: 'grunt-contrib-htmlmin',
+37 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+37 silly addNameRange   hasData: true }
+38 silly addNameRange versions [ 'grunt-contrib-htmlmin',
+38 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.1-rc7', '0.2.0', '0.3.0' ] ]
+39 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+40 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+41 error notarget No compatible version found: grunt-contrib-htmlmin@'>=0.4.0-0 <0.5.0-0'
+41 error notarget Valid install targets:
+41 error notarget ["0.1.0","0.1.1","0.1.2","0.1.3","0.1.1-rc7","0.2.0","0.3.0"]
+41 error notarget
+41 error notarget This is most likely not a problem with npm itself.
+41 error notarget In most cases you or one of your dependencies are requesting
+41 error notarget a package version that doesn't exist.
+42 error System Windows_NT 6.1.7601
+43 error command "d:\\Program Files\\nodejs\\node.exe" "d:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+44 error cwd d:\www\gruntdemo
+45 error node -v v0.10.36
+46 error npm -v 1.4.28
+47 error code ETARGET
+48 verbose exit [ 1, true ]

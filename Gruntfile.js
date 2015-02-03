@@ -65,6 +65,17 @@ module.exports = function(grunt) {
         tasks: ['jshint:test', 'qunit']
       },
     },
+    htmlmin: {                                     // Task 
+      dist: {                                      // Target 
+        options: {                                 // Target options 
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {                                   // Dictionary of files 
+          'dist/index.html': 'src/index.html'    // 'destination': 'source' 
+        }
+      }
+    }
   });
 
   // These plugins provide necessary tasks.
@@ -74,8 +85,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin']);
 
 };
