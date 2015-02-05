@@ -1,4 +1,4 @@
-/*! gruntdemo - v0.1.0 - 2015-02-03
+/*! gruntdemo - v0.1.0 - 2015-02-06
 * https://github.com/hennywei/gruntdemo
 * Copyright (c) 2015 hennywei; Licensed GPL */
 (function($) {
@@ -26,13 +26,15 @@
   $.gruntdemo.init = function(){
 
   };
+  $.gruntdemo.make = function(){
+
+
+  };
 
   // Custom selector.
   $.expr[':'].gruntdemo = function(elem) {
     // Is this element awesome?
     return $(elem).text().indexOf('awesome') !== -1;
   };
-
-
 
 }(jQuery));

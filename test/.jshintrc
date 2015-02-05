@@ -28,5 +28,10 @@
     "strictEqual",
     "notStrictEqual",
     "throws"
-  ]
+  ],
+  "globals": {
+    "$":false,
+    "jQuery":false,
+    "angular":false
+  }
 }
