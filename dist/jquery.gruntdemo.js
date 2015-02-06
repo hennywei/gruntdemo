@@ -23,11 +23,15 @@
   $.gruntdemo.options = {
     punctuation: '.'
   };
+
   $.gruntdemo.init = function(){
 
   };
   $.gruntdemo.make = function(){
 
+  };
+
+  $.gruntdemo.takeover = function(){
 
   };
 
