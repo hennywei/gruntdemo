@@ -26,7 +26,8 @@
 
   // Static method default options.
   $.gruntdemo.options = {
-    punctuation: '.'
+    punctuation: '.',
+    className: 'addStatus'
   };
 
   $.gruntdemo.init = function(){

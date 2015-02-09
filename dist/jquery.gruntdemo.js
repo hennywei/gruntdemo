@@ -1,4 +1,4 @@
-/*! gruntdemo - v0.1.0 - 2015-02-06
+/*! gruntdemo - v0.1.0 - 2015-02-09
 * https://github.com/hennywei/gruntdemo
 * Copyright (c) 2015 hennywei; Licensed GPL */
 (function($) {
@@ -21,7 +21,8 @@
 
   // Static method default options.
   $.gruntdemo.options = {
-    punctuation: '.'
+    punctuation: '.',
+    className: 'addStatus'
   };
 
   $.gruntdemo.init = function(){
