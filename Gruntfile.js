@@ -72,6 +72,21 @@ module.exports = function(grunt) {
           'dist/index.html': 'src/index.html'    // 'destination': 'source' 
         }
       }
+    },
+    cssmin: {
+      options: {
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'css',
+          ext: '.min.css'
+        }]
+      }
     }
   });
 
@@ -83,8 +98,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin','cssmin']);
 
 };
