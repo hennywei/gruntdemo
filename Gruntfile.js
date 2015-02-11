@@ -87,6 +87,12 @@ module.exports = function(grunt) {
           ext: '.min.css'
         }]
       }
+    },
+    csslint: {
+      strict: {
+        import: 2
+      },
+      src: ['css/*.css']
     }
   });
 
@@ -98,9 +104,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks("grunt-contrib-csslint");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin','cssmin']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin','csslint','cssmin']);
 
 };

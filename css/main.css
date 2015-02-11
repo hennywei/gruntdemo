@@ -6,7 +6,15 @@ body{
 	font:normal 14px/1.5 Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;color:#000;
 	background: #D0D0D0;
 	background-size:288px auto;
--webkit-user-select:none;margin:0 auto;padding:0;list-style:none;vertical-align:middle}
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+	-ms-user-select:none;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	vertical-align:middle
+}
 a {
 	color: #C00;
     cursor: pointer;
