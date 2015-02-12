@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = function(grunt) {
-
+  var mozjpeg = require('imagemin-mozjpeg');
+  var optipng = require('imagemin-optipng');
   // Project configuration.
   grunt.initConfig({
     // Metadata.
@@ -93,6 +94,20 @@ module.exports = function(grunt) {
         import: 2
       },
       src: ['css/*.css']
+    },
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 3,
+          use: [mozjpeg(),optipng()]
+        },                         
+        files: [{
+          expand: true,                  
+          cwd: 'src/images/',                   
+          src: ['**/*.{png,jpg,gif}'],   
+          dest: 'dist/images/'                 
+        }]
+      }
     }
   });
 
@@ -106,9 +121,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks("grunt-contrib-csslint");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin','csslint','cssmin']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify','htmlmin','csslint','cssmin','imagemin']);
 
 };

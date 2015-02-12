@@ -1,4 +1,4 @@
-/*! gruntdemo - v0.1.0 - 2015-02-11
+/*! gruntdemo - v0.1.0 - 2015-02-12
 * https://github.com/hennywei/gruntdemo
 * Copyright (c) 2015 hennywei; Licensed GPL */
 (function($) {
