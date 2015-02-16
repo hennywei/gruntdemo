@@ -41,6 +41,10 @@
 
   };
 
+  $.gruntdemo.render = function(){
+    
+  };
+
   // Custom selector.
   $.expr[':'].gruntdemo = function(elem) {
     // Is this element awesome?
