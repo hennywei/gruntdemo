@@ -122,6 +122,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-csslint");
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  //grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 
   // Default task.

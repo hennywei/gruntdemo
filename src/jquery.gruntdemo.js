@@ -44,6 +44,9 @@
   $.gruntdemo.render = function(){
     
   };
+  $.gruntdemo.testElement = function(){
+
+  };
 
   // Custom selector.
   $.expr[':'].gruntdemo = function(elem) {
